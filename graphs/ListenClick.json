@@ -1,0 +1,78 @@
+{
+    "properties": {
+        "name": "ListenClick",
+        "environment": {
+            "type": "noflo-browser"
+        }
+    },
+    "inports": {
+        "selector": {
+            "process": "dom/GetElement_2gpyq",
+            "port": "selector",
+            "metadata": {
+                "x": -252,
+                "y": -324,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "outports": {
+        "listenmouse_click": {
+            "process": "interaction/ListenMouse_4wgpe",
+            "port": "click",
+            "metadata": {
+                "x": 288,
+                "y": -360,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "getelement_error": {
+            "process": "dom/GetElement_2gpyq",
+            "port": "error",
+            "metadata": {
+                "x": 288,
+                "y": -504,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "groups": [],
+    "processes": {
+        "dom/GetElement_2gpyq": {
+            "component": "dom/GetElement",
+            "metadata": {
+                "label": "dom/GetElement",
+                "x": -108,
+                "y": -324,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "interaction/ListenMouse_4wgpe": {
+            "component": "interaction/ListenMouse",
+            "metadata": {
+                "label": "interaction/ListenMouse",
+                "x": 72,
+                "y": -324,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "dom/GetElement_2gpyq",
+                "port": "element"
+            },
+            "tgt": {
+                "process": "interaction/ListenMouse_4wgpe",
+                "port": "element"
+            },
+            "metadata": {}
+        }
+    ]
+}
