@@ -1,5 +1,5 @@
 {
-  "name": "noflo-browser-app",
+  "name": "non-descriptive-project-name",
   "description": "The best project ever.",
   "author": "Jon Nordby <jononor@gmail.com>",
   "repo": "noflo/noflo-browser-app",
@@ -10,7 +10,8 @@
     "noflo/noflo-dom": "*",
     "noflo/noflo-core": "*",
     "noflo/noflo-interaction": "*",
-    "noflo/noflo-runtime-webrtc": "*"
+    "noflo/noflo-runtime-webrtc": "*",
+    "noflo/noflo-packets": "*"
   },
   "remotes": [
     "https://raw.githubusercontent.com"
